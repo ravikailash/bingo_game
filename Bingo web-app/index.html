@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bingo Game</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h3>Bingo Game</h3>
+		<label>Select Grid Size:</label>
+		<select id="grids" onchange="getGridSize(this);">
+			<option value="0"> - </option>
+			<option value="3">Grid 3</option>
+			<option value="4">Grid 4</option>
+			<option value="5">Grid 5</option>
+		</select>
+		
+		<hr />
+		
+		<div class="container" style="display: none;">
+			<div id="controls">
+				<h2>Controls</h2>
+				<button onclick="generateNumbers()" id="fillNumbers">Fill Numbers</button> <br/>
+				<button onclick="generateRandomNumbers()" id="generateRandoms">Generate Random</button> <br />
+				<button onclick="setGrid()" id="setGrid">Set Grid</button> <br />
+				<span id="result"></span>
+			</div>
+			
+			<div id="board">
+				<h2>Board</h2>
+				
+				<div id="grid"></div>
+				
+				<span id="content"></span>
+			</div>
+			
+		</div>
+		
+		<script src="main.js"></script>
+
+	</body>
+	
+</html>

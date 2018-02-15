@@ -1,0 +1,65 @@
+body h3 {
+	color: green;
+	background: #f4f4f4;
+	text-align: center;
+}
+
+hr {
+	background:red;
+	height: 1px;
+}
+
+#board{
+	float: left;
+}
+
+#grid {
+	position: absolute;
+	left: 30%;
+}
+
+.content {
+	background: lightblue;
+	color: black;
+	text-align: center;
+}
+
+.char {
+	font-weight: bold;
+}
+
+.cell { 
+	border-right: 1px solid black; 
+	border-bottom: 1px solid #000000; 
+	float: left; 
+	width: 50px; 
+	height: 50px; 
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	background: gray;
+}
+
+.row { 
+	clear: both; 
+	overflow: hidden;
+}
+
+.table { 
+	border-left: 1px solid #000000; 
+	border-top: 1px solid #000000; 
+}
+
+button {
+	color: white;
+	background: green;
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	font-size: 13px;
+}
+
+#controls{
+	float: left;
+	width: 20%;
+}
